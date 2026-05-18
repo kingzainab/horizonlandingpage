@@ -21,25 +21,34 @@ export default function Navbar() {
   const projectMaterials = [
     { 
       name: 'Poster', 
+      url: 'https://horizonfyp.blob.core.windows.net/openhouse/Poster.pdf',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /> 
+    },
+    { 
+      name: 'Standee', 
+      url: 'https://horizonfyp.blob.core.windows.net/openhouse/Standee.pdf',
       icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /> 
     },
     { 
       name: 'Brochure', 
+      url: 'https://horizonfyp.blob.core.windows.net/openhouse/Brouchere_Merged.pdf',
       icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /> 
     },
     { 
       name: 'Abstract', 
+      url: 'https://horizonfyp.blob.core.windows.net/openhouse/Horizon%20Abstract.pdf',
       icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /> 
     },
     { 
       name: 'Presentation', 
+      url: 'https://horizonfyp.blob.core.windows.net/openhouse/External%20Eval%20Presentation%20Horizon.pdf',
       icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M7 4v16M17 4v16M3 8h18M3 16h18" /> 
     },
   ];
 
   const teamCVs = [
-    { name: 'Zainab Asif' },
-    { name: 'Ahmed Tasadduq' }
+    { name: 'Zainab Asif', url: 'https://horizonfyp.blob.core.windows.net/openhouse/Zainab%20Asif%20-CV.pdf' },
+    { name: 'Ahmed Tasadduq', url: 'https://horizonfyp.blob.core.windows.net/openhouse/Ahmed%20Tasadduq%20-%20CV.pdf' }
   ];
 
   // Global user SVG icon profile path
@@ -91,7 +100,7 @@ export default function Navbar() {
                 <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/35 mb-3 px-1">Project Material</div>
                 <div className="flex flex-col gap-1 mb-5">
                   {projectMaterials.map((item, index) => (
-                    <a key={index} href="#" className="flex items-center gap-3.5 px-2.5 py-2.5 rounded-xl hover:bg-white/5 text-white/70 hover:text-white transition-colors group">
+                    <a key={index} href={item.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3.5 px-2.5 py-2.5 rounded-xl hover:bg-white/5 text-white/70 hover:text-white transition-colors group">
                       <svg className="w-5 h-5 text-white/50 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         {item.icon}
                       </svg>
@@ -104,7 +113,7 @@ export default function Navbar() {
                 <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/35 mb-3 px-1">Team CVs</div>
                 <div className="flex flex-col gap-1">
                   {teamCVs.map((item, index) => (
-                    <a key={index} href="#" className="flex items-center gap-3.5 px-2.5 py-2.5 rounded-xl hover:bg-white/5 text-white/70 hover:text-white transition-colors group">
+                    <a key={index} href={item.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3.5 px-2.5 py-2.5 rounded-xl hover:bg-white/5 text-white/70 hover:text-white transition-colors group">
                       <svg className="w-5 h-5 text-white/50 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         {userIcon}
                       </svg>
