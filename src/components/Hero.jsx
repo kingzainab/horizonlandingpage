@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-32 relative">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-40 relative z-10">
       {/* Dynamic Badge */}
       <div className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/40 text-[11px] font-semibold tracking-[0.25em] uppercase mb-10 shadow-inner">
         Personalized Flight Journal
