@@ -6,13 +6,15 @@ export default function Team() {
     { 
       name: 'Zainab Asif', 
       role: 'Software Engineer', 
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/-zainab-asif/',
+      cv: 'https://horizonfyp.blob.core.windows.net/openhouse/Zainab%20Asif%20-CV.pdf',
       image: '/zainab.jpeg' // Points directly to public/zainab.jpeg
     },
     { 
       name: 'Ahmed Tasadduq', 
       role: 'Software Engineer', 
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/ahmed6123/',
+      cv: 'https://horizonfyp.blob.core.windows.net/openhouse/Ahmed%20Tasadduq%20-%20CV.pdf',
       image: '/ahmed.jpeg' // Points directly to public/ahmed.jpeg
     }
   ];
@@ -55,6 +57,8 @@ export default function Team() {
               {/* Premium Purple Button */}
               <a 
                 href={member.linkedin} 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-purple-500/10 border border-purple-500/20 text-xs font-semibold text-[#E2BDF9] hover:bg-purple-500/20 transition-all shadow-[0_0_15px_rgba(123,70,156,0.15)] cursor-pointer"
               >
                 LinkedIn
@@ -63,7 +67,9 @@ export default function Team() {
                 </svg>
               </a>
               <a 
-                href="#" 
+                href={member.cv} 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-3.5 py-2 rounded-xl border border-white/5 hover:border-white/10 text-xs font-medium text-white/40 hover:text-white transition-all cursor-pointer"
               >
                 Download CV
@@ -96,7 +102,9 @@ export default function Team() {
           <div className="mt-8">
             {/* Replicated Purple Button matching the Dev layout */}
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/aamir-sohail-0932b268/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-purple-500/10 border border-purple-500/20 text-xs font-semibold text-[#E2BDF9] hover:bg-purple-500/20 transition-all shadow-[0_0_15px_rgba(123,70,156,0.15)] cursor-pointer"
             >
               LinkedIn
